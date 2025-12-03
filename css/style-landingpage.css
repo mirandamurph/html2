@@ -1,12 +1,99 @@
-#navbar {
+
+  * {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+    font-family: sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    padding-top: 60px; 
+}
+
+
+#header {
   display: flex;
   justify-content: space-between; 
   align-items: center;            
   padding: 10px 20px;
+  background-color: #333;
+  color: white;
+  position: fixed; 
+  top: 0;
+  width: 100%;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
 }
-@media (max-width: 600px) {
 
-  #navbar {
-    flex-direction: column;
-    align-items: flex-start;
+
+#header-img {
+    height: 40px; 
+}
+
+/* Navigation Links */
+.nav-link {
+    color: white;
+    text-decoration: none; 
+    margin-left: 15px; 
+}
+
+.nav-link:hover {
+    text-decoration: underline; 
+}
+
+
+section {
+    padding: 40px 20px;
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto; 
+}
+
+
+#video {
+    width: 100%;    
+    max-width: 600px; 
+    margin-top: 15px;
+    display: block;
+}
+
+/* Form Styling */
+#form {
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    margin-top: 15px;
+    max-width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#email {
+    padding: 10px;
+    width: 100%;
+    border: 1px solid #ccc;
+}
+
+#submit {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+
+@media (max-width: 600px) {
+  #header {
+    flex-direction: column; 
+    height: auto;
   }
+  #nav-bar {
+      margin-top: 10px; 
+  }
+  body {
+      padding-top: 100px; 
+  }
+}
