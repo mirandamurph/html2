@@ -88,19 +88,35 @@ section {
   #header {
     flex-direction: column; 
     height: auto; 
-    padding: 0px 20px; 
+    padding: 5px 15px; 
+    gap: 2px;
   }
   
  #header-img {
-    height: 90px; 
-    padding-top:10px;
+    height: 80px; 
+    padding-top: 10px;
+  }
+
+  #header h1 {
+    font-size: 1.5em; 
+    margin: 3px 0; 
   }
 
   #nav-bar {
-      margin-top: 2px; 
+    margin-top: auto; 
+    width: 100%;
+    display: flex; 
+    justify-content: space-evenly; 
+    flex-wrap: wrap;
+    padding: 10px 0;
+    background-color: #D86A5F;
+  }
+   .nav-link {
+    margin: 0px 0; 
+    font-size: 1.0em
   }
     body {
-      padding-top: 195px; 
+    padding-top: 150px; 
   }
 }
 
