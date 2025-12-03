@@ -9,7 +9,8 @@ body {
     line-height: 1.6;
     background-color: #f4f4f4;
     /* Updated for the height of the fixed header on desktop screens */
-    padding-top: 140px; 
+    padding-top: 130px; 
+    transition: padding-top 0.3s ease;
 }
 
 
@@ -31,6 +32,7 @@ display: flex;
 
 #header-img {
     height: 120px; 
+    max-width: 100%;
 }
 
 #header h1 {
@@ -52,7 +54,7 @@ display: flex;
 
 
 section {
-    padding: 100px 20px;
+    padding: 50px 20px;
     text-align: center;
     max-width: 800px;
     margin: 0 auto; 
@@ -86,16 +88,17 @@ section {
 }
 
 
-@media (max-width: 600px) {
+@media (max-width: 400px) {
   #header {
     flex-direction: column; 
-    height: auto;
+    height: auto; 
   }
+  
   #nav-bar {
       margin-top: 10px; 
   }
-  body {
-      padding-top: 180px;
+    body {
+      padding-top: 315px; 
   }
 }
 
@@ -122,11 +125,13 @@ section {
 	width: 100%;
 	height: 100%;
 }
+
 .box {
 	display: flex;
 	width: 950px;
-	margin: 140px auto;
+	margin: 30px auto; 
 }
+
 .single-box {
 	width: 300px;
 	background: #fff;
@@ -200,4 +205,31 @@ section {
   max-width: 100%; 
   height: auto; 
   display: block; 
+}
+
+
+.ingredients {
+  font-size: 30px;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.center-list-aligned {
+  text-align: center;
+  padding-left: 0;
+  margin-left: 0; 
+  margin-top: 20px;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #E07A5F;
+  color: white;
+}
+
+p {
+   text-align: center;
+    margin-top: 10px;
+    font-size: 20px;
 }
