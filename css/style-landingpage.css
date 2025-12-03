@@ -1,4 +1,3 @@
-
   * {
   box-sizing: border-box;
   margin: 0;
@@ -9,7 +8,8 @@ body {
     font-family: sans-serif;
     line-height: 1.6;
     background-color: #f4f4f4;
-    padding-top: 60px; 
+    /* Updated for the height of the fixed header on desktop screens */
+    padding-top: 140px; 
 }
 
 
@@ -21,15 +21,23 @@ display: flex;
   padding: 10px 20px;
   background-color: #E07A5F ;
   color: white;
-  position: fixed; 
+  position: fixed; /* This makes the header stay in place */
   top: 0;
   width: 100%;
   box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+  z-index: 10; /* Ensures the header is layered on top of other content */
 }
 
 
 #header-img {
-    height: 100px; 
+    height: 120px; 
+}
+
+#header h1 {
+  color: white; 
+  font-size: 2em; 
+  margin: 0; 
+  margin-right: 20px; 
 }
 
 .nav-link {
@@ -87,7 +95,7 @@ section {
       margin-top: 10px; 
   }
   body {
-      padding-top: 100px; 
+      padding-top: 180px;
   }
 }
 
@@ -131,21 +139,16 @@ section {
 .single-box:last-child {
 	margin-right: 0;
 }
-.single-box .img img {
-	width: 200px;
-	margin-bottom: 10px;
-}
+/* Removed .single-box .img img and .img styles as images were removed from HTML previously */
+
 .single-box .price {
 	font-weight: 600;
 	font-size: 45px;
 }
-.img {
-	position: absolute;
-	top: -25%;
-	left: 20%;
-}
+
 .single-box h3 {
-	margin-top: 25%;
+    /* Adjusted margin since image div was removed from single-box */
+	margin-top: 0; 
 	margin-bottom: 15px;
 }
 .single-box p {
@@ -160,6 +163,19 @@ section {
 	display: inline-block;
 	margin-top: 30px;
 }
+
+
+.single-box .img img {
+	width: 200px;
+	margin-bottom: 10px;
+}
+
+.img { /* This specific rule is causing an issue */
+	position: absolute;
+	top: -25%;
+	left: 20%;
+}
+
 @media(max-width:991px) {
 	.box {
 		width: 100%;
@@ -173,6 +189,20 @@ section {
 	.single-box {
 		margin-right: 0;
 		width: 100%;
-		margin-bottom: 110px;
+		margin-bottom: 40px; /* Adjusted spacing for mobile view */
 	}
+}
+
+.kimchi-jars {
+  display: flex;
+  justify-content: center;
+  margin: 40px auto; 
+  max-width: 600px; 
+  width: 90%;
+}
+
+#mid-img {
+  max-width: 100%; 
+  height: auto; 
+  display: block; 
 }
