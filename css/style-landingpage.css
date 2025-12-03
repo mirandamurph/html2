@@ -14,11 +14,12 @@ body {
 
 
 #header {
-  display: flex;
-  justify-content: space-between; 
-  align-items: center;            
+display: flex; 
+  justify-content: center; 
+  align-items: center;  
+  gap: 30px;          
   padding: 10px 20px;
-  background-color: #333;
+  background-color: #E07A5F ;
   color: white;
   position: fixed; 
   top: 0;
@@ -28,10 +29,9 @@ body {
 
 
 #header-img {
-    height: 40px; 
+    height: 100px; 
 }
 
-/* Navigation Links */
 .nav-link {
     color: white;
     text-decoration: none; 
@@ -44,21 +44,14 @@ body {
 
 
 section {
-    padding: 40px 20px;
+    padding: 100px 20px;
     text-align: center;
     max-width: 800px;
     margin: 0 auto; 
 }
 
 
-#video {
-    width: 100%;    
-    max-width: 600px; 
-    margin-top: 15px;
-    display: block;
-}
 
-/* Form Styling */
 #form {
     display: flex;
     flex-direction: column; 
@@ -96,4 +89,25 @@ section {
   body {
       padding-top: 100px; 
   }
+}
+
+.video-wrapper {
+  position: relative;
+    overflow: hidden;
+    /* This sets the max size you want the video to reach */
+    max-width: 600px; 
+    
+    /* Center the wrapper horizontally */
+    margin: 15px auto; 
+    
+    /* Use modern CSS aspect-ratio */
+    aspect-ratio: 16 / 9; 
+}
+
+.video-wrapper iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
 }
