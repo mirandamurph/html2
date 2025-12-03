@@ -21,11 +21,11 @@ display: flex;
   padding: 10px 20px;
   background-color: #E07A5F ;
   color: white;
-  position: fixed; /* This makes the header stay in place */
+  position: fixed; 
   top: 0;
   width: 100%;
   box-shadow: 0 2px 5px rgba(0,0,0,0.2);
-  z-index: 10; /* Ensures the header is layered on top of other content */
+  z-index: 10; 
 }
 
 
@@ -139,7 +139,6 @@ section {
 .single-box:last-child {
 	margin-right: 0;
 }
-/* Removed .single-box .img img and .img styles as images were removed from HTML previously */
 
 .single-box .price {
 	font-weight: 600;
@@ -147,13 +146,14 @@ section {
 }
 
 .single-box h3 {
-    /* Adjusted margin since image div was removed from single-box */
 	margin-top: 0; 
 	margin-bottom: 15px;
 }
+
 .single-box p {
 	line-height: 1.9;
 }
+
 .single-box a {
 	background: #f57e20;
 	color: #fff;
@@ -170,11 +170,6 @@ section {
 	margin-bottom: 10px;
 }
 
-.img { /* This specific rule is causing an issue */
-	position: absolute;
-	top: -25%;
-	left: 20%;
-}
 
 @media(max-width:991px) {
 	.box {
@@ -189,7 +184,7 @@ section {
 	.single-box {
 		margin-right: 0;
 		width: 100%;
-		margin-bottom: 40px; /* Adjusted spacing for mobile view */
+		margin-bottom: 40px; 
 	}
 }
 
