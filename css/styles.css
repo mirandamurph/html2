@@ -2,18 +2,20 @@
  
  @font-face {
   font-family: "Blustrue";
-  src: local("Blustrue"),
+  src: local("blustrue"),
   url("fonts/blustrue.ttf") format(".ttf");
  }
 
   h1 {
-  font-family: "blustrue", sans-serif;
+  font-family: "blustrue";
     color: green;
+    font-size: 35px;
  }
 
-  h2 {
+h2 {
    font-family: Arial, sans-serif;
    color: #BE5103; 
+   font-size: 30px;
   }
  
  body {
@@ -26,4 +28,21 @@
   font-family: "Telex", sans-serif;
   font-weight: 400;
   font-style: normal;
+}
+
+
+ul   {
+list-style-type: none; 
+  padding-left: 0px;
+  max-width: 350px;
+  min-width: 230px;
+}
+
+li a {
+  display: block; 
+    padding: 10px 15px; 
+    margin-bottom: 5px;
+  background-color: #f0e6d2; 
+    text-decoration: none; 
+  border-radius: 5px; 
 }
