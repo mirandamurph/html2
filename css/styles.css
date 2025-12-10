@@ -1,8 +1,8 @@
  
  
  @font-face {
-  font-family: "blustrue";
-  src: local("blustrue"),
+  font-family: "Blustrue";
+  src: local("Blustrue"),
   url("fonts/blustrue.ttf") format(".ttf");
  }
 
@@ -19,6 +19,7 @@
  body {
    background-color: beige;
    padding: 50px;
+   color: #BE5103; 
  }
   
  .telex-regular {
