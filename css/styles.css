@@ -1,13 +1,13 @@
  
  
  @font-face {
-  font-family: "Blustrue";
-  src: local("blustrue"),
-  url("fonts/blustrue.ttf") format(".ttf");
+  font-family: "BD Cartoon Shout";
+  src: local("BD Cartoon Shout"),
+  url("fonts/bdcartoonshout.ttf") format(".ttf");
  }
 
   h1 {
-  font-family: "blustrue";
+  font-family: "BD Cartoon Shout";
     color: green;
     font-size: 35px;
  }
