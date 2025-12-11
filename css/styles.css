@@ -3,25 +3,25 @@
  @font-face {
   font-family: "BD Cartoon Shout";
   src: local("BD Cartoon Shout"),
-  url("fonts/bdcartoonshout.ttf") format(".ttf");
+  url("../fonts/bdcartoonshout.ttf") format("truetype");
  }
 
   h1 {
   font-family: "BD Cartoon Shout";
-    color: green;
+    color: #FF8800;
     font-size: 35px;
  }
 
 h2 {
    font-family: Arial, sans-serif;
-   color: #BE5103; 
+   color: #A8CBA0; 
    font-size: 30px;
   }
  
  body {
-   background-color: beige;
+   background-color: #263238;
    padding: 50px;
-   color: #BE5103; 
+   color: #ECEFF1; 
  }
   
  .telex-regular {
@@ -42,7 +42,13 @@ li a {
   display: block; 
     padding: 10px 15px; 
     margin-bottom: 5px;
-  background-color: #f0e6d2; 
+  background-color:#37474F; 
+  color: #ECEFF1;
     text-decoration: none; 
   border-radius: 5px; 
+}
+
+li a:hover {
+    background-color: #FF8800;
+    color: #263238; 
 }
